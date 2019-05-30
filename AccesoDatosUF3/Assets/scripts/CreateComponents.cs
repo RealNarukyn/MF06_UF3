@@ -28,11 +28,10 @@ public class CreateComponents : MonoBehaviour{
             content.name = weapons[i].GetWeapon();
             content.transform.localPosition = offset;
 
-            infoBox.setName(weapons[i].GetWeapon());
+            infoBox.setName(content.name);
             infoBox.setDamage(weapons[i].GetDamage());
 
             offset = new Vector3(offset.x, offset.y - 60, offset.z);
-            
         }
 	}
 	

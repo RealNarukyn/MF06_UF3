@@ -64,8 +64,8 @@ public class DB : MonoBehaviour{
             string weapon = reader.GetString(1);
             int damage = reader.GetInt32(2);
 
-
             weapons.Add(new Weapon(id, weapon, damage));
+            Debug.Log(id + weapon + damage);
         }
         
         return weapons;
