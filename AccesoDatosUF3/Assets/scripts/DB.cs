@@ -30,7 +30,7 @@ public class DB : MonoBehaviour{
         //Debug.Log(GetWeapons()[0].GetWeapon());
     }
 
-    private void PrintWeapons()
+    public void PrintWeapons()
     {
         string query = "SELECT weapon FROM weapons";
 
@@ -90,7 +90,8 @@ public class DB : MonoBehaviour{
 
             users.Add(new User(id, user));
         }
-
         return users;
     }
+
+    public IDbCommand getCommand() {return command;}
 }
